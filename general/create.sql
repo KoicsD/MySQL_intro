@@ -1,0 +1,44 @@
+CREATE DATABASE MeetupSystemDB;
+USE MeetupSystemDB;
+
+CREATE TABLE Users
+(
+	Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	Name VARCHAR(100) NOT NULL,
+	Birthdate DATETIME NOT NULL,
+	Introduction VARCHAR(500),
+	Avatar VARCHAR(1000),
+	Email VARCHAR(150)
+);
+
+CREATE TABLE Meetups
+(
+	Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	Start DATETIME NOT NULL,
+	Location VARCHAR(150) NOT NULL,
+	Topic VARCHAR(150) NOT NULL,
+	Description VARCHAR(1000) NOT NULL
+);
+
+CREATE TABLE Statuses
+(
+	Id INTEGER PRIMARY KEY,
+	Value VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE MeetupRegistrations
+(
+	Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+	StatusId INTEGER NOT NULL,
+	MeetupId INTEGER NOT NULL,
+	UserId INTEGER NOT NULL,
+	
+	FOREIGN KEY (StatusId) REFERENCES Statuses(Id),
+	FOREIGN KEY (MeetupId) REFERENCES Meetups(Id),
+	FOREIGN KEY (UserId) REFERENCES Users(Id)
+);
+
+INSERT INTO Statuses (Id, Value) VALUE ('1', 'Going');
+INSERT INTO Statuses (Id, Value) VALUE ('2', 'Tentative');
+INSERT INTO Statuses (Id, Value) VALUE ('3', 'Not going');
+INSERT INTO Statuses (Id, Value) VALUE ('4', 'Presenting');
