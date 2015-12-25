@@ -28,7 +28,7 @@ Write scripts for extending at least one table with some new  nullable columns. 
 
 -------
 
-![MeetupSystemDB.png](MeetupSystemDB.png)
+[MeetupSystemDB.png](MeetupSystemDB.png)
 
 A simple relational model which represents a simple meetup registration database.
 
