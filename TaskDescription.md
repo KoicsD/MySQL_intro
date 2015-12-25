@@ -28,7 +28,7 @@ Write scripts for extending at least one table with some new  nullable columns. 
 
 -------
 
-[MeetupSystemDB.png](MeetupSystemDB.png)
+![MeetupSystemDB.png](MeetupSystemDB.png)
 
 A simple relational model which represents a simple meetup registration database.
 
@@ -66,7 +66,7 @@ Learn SQL with CodeCademy! SQL is a special-purpose programming language designe
 
 -------------------
 
-[Scaling Yourself * Scott Hanselmann](https://www.youtube.com/watch?v=FS1mnISoG7U)
+[Scaling Yourself -- Scott Hanselmann](https://www.youtube.com/watch?v=FS1mnISoG7U)
 
 As information workers, we are asked to absorb even more information than ever before. More blogs, more documentation, more patterns, more layers of abstraction.
 Now Twitter and Facebook compete with Email and Texts for our attention, keeping us up-to-date on our friends dietary details and movie attendance second-by-second.
